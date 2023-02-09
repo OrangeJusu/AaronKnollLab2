@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include "ItemType.h"
+#include "UnsortedType1.h"
+
+using namespace std;
+
+int main() {
+    UnsortedType list1;
+    UnsortedType list2;
+    UnsortedType list3;
+
+    list1.addItem(1);
+    list1.addItem(2);
+    list1.addItem(3);
+    list1.addItem(4);
+    list2.addItem(3);
+    list2.addItem(4);
+    list2.addItem(5);
+    list2.addItem(6);
+
+    list3 = list3.Union(list1, list2);
+    list3.display();
+
+    return 0;
+}
